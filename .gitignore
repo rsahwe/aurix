@@ -3,6 +3,7 @@ release/
 sysroot/
 .vscode/
 .idea/
+result
 
 modules/ps2kbd/
 modules/ps2mouse/

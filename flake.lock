@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "aurix-binutils-src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-2gdvBrOceHqkJuXSfyq02ZTcC/XesE0iqjB4PzYGUXU=",
+        "type": "file",
+        "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.46.0.tar.xz"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.46.0.tar.xz"
+      }
+    },
+    "aurix-gcc-src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-oEQgMPeBll/KkK9lwrtEhl4ixez4BTuL/+sXR0Pb2yg=",
+        "type": "file",
+        "url": "https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz"
+      }
+    },
+    "aurix-mlibc-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1776605968,
+        "narHash": "sha256-J6PRESYVcbAEoBkYEUfmVs8cktCELSc4l44iYqtSGks=",
+        "owner": "piraterna",
+        "repo": "aurix-mlibc",
+        "rev": "958dec5d67c0f5f5ca2659f5c31667f7da30f877",
+        "type": "github"
+      },
+      "original": {
+        "owner": "piraterna",
+        "repo": "aurix-mlibc",
+        "type": "github"
+      }
+    },
+    "aurix-toolchain-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1777761306,
+        "narHash": "sha256-k7YZJ7C9qesZ8hgX+qH40nGdhXkNTiSBs44D77s3bSg=",
+        "owner": "piraterna",
+        "repo": "aurix-toolchain",
+        "rev": "c06a12c6743b4121c1dc04e1dfe380598b7636f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "piraterna",
+        "repo": "aurix-toolchain",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777678872,
+        "narHash": "sha256-EPIFsulyon7Z1vLQq5Fk64GR8L7cQsT+IPhcsukVbgk=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "5250617bffd85403b14dbf43c3870e7f255d2c16",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1777578337,
+        "narHash": "sha256-Ad49moKWeXtKBJNy2ebiTQUEgdLyvGmTeykAQ9xM+Z4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "15f4ee454b1dce334612fa6843b3e05cf546efab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "aurix-binutils-src": "aurix-binutils-src",
+        "aurix-gcc-src": "aurix-gcc-src",
+        "aurix-mlibc-src": "aurix-mlibc-src",
+        "aurix-toolchain-src": "aurix-toolchain-src",
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
