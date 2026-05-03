@@ -140,6 +140,7 @@ bool paging_init(void)
 	unmap_page(NULL, (uintptr_t)NULL);
 
 	boot_params->mmap = (struct aurix_memmap *)PHYS_TO_VIRT(boot_params->mmap);
+	boot_params->modules = (struct aurix_module *)PHYS_TO_VIRT(boot_params->modules);
 	boot_params = (struct aurix_parameters *)PHYS_TO_VIRT(boot_params);
 
 	write_cr3((uint64_t)kernel_pm);
