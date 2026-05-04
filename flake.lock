@@ -56,6 +56,22 @@
         "type": "github"
       }
     },
+    "doom-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1774854426,
+        "narHash": "sha256-bnHzWtcsf8PntV6/XvmqBBqFjPpIp3wfZxfAMv706wA=",
+        "owner": "piraterna",
+        "repo": "doomgeneric",
+        "rev": "49e6326eb213d05d45071cc77048d8c82f9755ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "piraterna",
+        "repo": "doomgeneric",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -98,8 +114,26 @@
         "aurix-gcc-src": "aurix-gcc-src",
         "aurix-mlibc-src": "aurix-mlibc-src",
         "aurix-toolchain-src": "aurix-toolchain-src",
+        "doom-src": "doom-src",
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "toybox-src": "toybox-src"
+      }
+    },
+    "toybox-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1777503317,
+        "narHash": "sha256-U0lizFVlLXLuur6VZjYzCUbPC6e08fpUC6y9H70KgiY=",
+        "owner": "landley",
+        "repo": "toybox",
+        "rev": "266ac9daaa8d5da187af3a48951d0670e2b7b5b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "landley",
+        "repo": "toybox",
+        "type": "github"
       }
     }
   },
